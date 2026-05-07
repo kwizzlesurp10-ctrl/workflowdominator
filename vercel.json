@@ -1,19 +1,15 @@
 {
   "version": 2,
-  "framework": null,
   "builds": [
     {
-      "src": "app.py",
-      "use": "@vercel/python"
+      "src": "Dockerfile",
+      "use": "@vercel/docker"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "app.py"
+      "dest": "/"
     }
-  ],
-  "env": {
-    "PYTHON_VERSION": "3.11"
-  }
+  ]
 }
