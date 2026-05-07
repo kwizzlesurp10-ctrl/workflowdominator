@@ -36,6 +36,26 @@ It auto-classifies any agent idea against the full EU AI Act taxonomy, quantifie
 
 (Full table + editable inputs live in the simulator.)
 
+## Deploy Instructions (Vercel + Streamlit Cloud)
+
+### Recommended: Streamlit Community Cloud (30 seconds)
+1. Go to https://share.streamlit.io
+2. Sign in with GitHub
+3. New app → select `workflowdominator` repo
+4. Main file: `app.py`
+5. Deploy
+
+You’ll get https://workflowdominator.streamlit.app instantly.
+
+### Vercel (if you want custom domain)
+1. vercel.com → Import `workflowdominator`
+2. Framework: Other
+3. The `vercel.json` in this repo handles the Python entrypoint.
+4. Add env var: PYTHON_VERSION = 3.11
+5. Deploy
+
+If you still see entrypoint errors, reply and I’ll push a Dockerfile fix.
+
 ## Suggested Build Environment (Start Here Today)
 **Recommended stack for indie speed-to-ship: Streamlit (Python)**  
 - 5-minute local run → one-click deploy on Streamlit Cloud (free tier).  
@@ -67,7 +87,7 @@ streamlit run app.py
 
 **Grab it here:** [YourLink] (first 25 this week also unlock the free high-volume library).
 
-Or reply **“BUILD”** for the $97 one-time Done-With-You session where I walk you through deploying the full Streamlit app live on your domain (only 5 slots left this week).
+Or reply **“BUILD”** for the $97 one-time Done-With-You session where I walk you through deploying the full Streamlit app live on your domain (only 3 slots left this week).
 
 You now have the full spec in your hands. The only question left is whether you ship the MVP this week or next.
 
